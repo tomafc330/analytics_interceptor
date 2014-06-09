@@ -1,10 +1,12 @@
 {
 	"name": "Client side analytics interceptor",
-	"version": "0.0.1",
-	"description": "A chrome extension that will intercept all calls to client side analytics platform and show you what it would send. Currently supports Mixpanel, KissMetrics and Google Analytics.",
-	"background": {"page": "background.html"},
+	"short_name": "Analytics interceptor",
+	"version": "1.2.0",
+	"description": "App that blocks all calls to analytics platform and shows you what it would send. Supports Mixpanel, KissMetrics, Google Analytics.",
+	"background": {
+		"page": "background.html"
+	},
 	"manifest_version": 2,
-//	"content_security_policy": #don't need
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
@@ -15,7 +17,8 @@
 		"lib/*", "injected_scripts/*"
 	],
 	"icons": {
-		"32": "stop.png"
+		"32": "stop.png",
+		"128": "stop-128.png"
 	},
 	"browser_action": {
 		"name": "Toggle Feature",

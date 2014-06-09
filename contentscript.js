@@ -36,13 +36,13 @@ chrome.storage.local.get({
 }, function (data) {
 
 	if (data.analytics_interceptor_enabled === 'true') {
-		addScript('injected_scripts/interceptor.js');
 		addScript('lib/conditional_jquery.js');
 		addCss('lib/jquery.growl.css');
 
 		//TODO: don't use setTimeout to wait for jQuery to load
-		setTimeout(function() {
+//		setTimeout(function() {
 			addScript('lib/jquery.growl.js');
-		}, 500);
+			addScript('injected_scripts/interceptor.js');
+//		}, 800);
 	}
 });
