@@ -1,0 +1,15 @@
+{
+	"undef": true,
+	"browser": true,
+	"jquery": true,
+	"nonstandard": true,
+	"devel": true,
+	"node": true,
+	"eqnull": true,
+	"boss": true,
+	"laxcomma": true,
+	"sub": true,
+	"smarttabs": true,
+	"strict": false,
+	"loopfunc": true
+}

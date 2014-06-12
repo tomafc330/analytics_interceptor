@@ -1,11 +1,8 @@
 {
 	"name": "Client side analytics interceptor",
 	"short_name": "Analytics interceptor",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "App that blocks all calls to analytics platform and shows you what it would send. Supports Mixpanel, KissMetrics, Google Analytics.",
-	"background": {
-		"page": "background.html"
-	},
 	"manifest_version": 2,
 	"content_scripts": [
 		{

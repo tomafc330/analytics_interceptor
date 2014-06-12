@@ -1,3 +1,4 @@
+/*global chrome: true */
 jQuery('#toggle_app_btn').on('click', function() {
 	var valToSet = jQuery('#toggle_app_btn').text() == 'Turn On' ? 'true' : 'false';
 	chrome.storage.local.set({"analytics_interceptor_enabled": valToSet}, function () {
@@ -21,7 +22,7 @@ jQuery('#home').on('click', function() {
 	jQuery('.inner.cover').removeClass('hide');
 	jQuery(this).parent().addClass('active');
 	jQuery('#features').parent().removeClass('active');
-})
+});
 
 chrome.storage.local.get('analytics_interceptor_enabled', function (data) {
 	if (data.analytics_interceptor_enabled === 'true') {
